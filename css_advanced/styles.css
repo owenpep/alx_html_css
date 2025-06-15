@@ -1,0 +1,373 @@
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+
+body {
+  font-family: 'Source Sans Pro', sans-serif;
+  color: white;
+  background-color: #000;
+}
+
+
+header {
+  background-image: url('./images/8e8da0b4-bfcb-4ab7-aac8-aabdbed647d5.png');
+  background-size: cover;
+  background-position: center;
+  height: 100vh;
+  position: relative;
+  padding: 20px 60px;
+}
+
+nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+nav img {
+  height: 40px;
+}
+
+nav ul {
+  list-style: none;
+  display: flex;
+  gap: 30px;
+}
+
+nav a {
+  text-decoration: none;
+  color: white;
+  font-weight: bold;
+}
+
+main > section:first-of-type {
+  position: absolute;
+  top: 30%;
+  width: 100%;
+  text-align: center;
+}
+
+main h1 {
+  font-size: 72px;
+  font-weight: 700;
+  margin-bottom: 20px;
+}
+
+main span {
+  display: inline-block;
+  margin: 0 10px;
+  font-size: 16px;
+  font-weight: 600;
+  letter-spacing: 2px;
+}
+
+main button {
+  margin-top: 20px;
+  background-color: #C271FF;
+  border: none;
+  padding: 12px 24px;
+  font-weight: bold;
+  border-radius: 24px;
+  color: white;
+  font-size: 14px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+main button:hover {
+  background-color: #a244e8;
+}
+
+/* "Learn from the pros" section */
+main section:nth-of-type(1) h2 {
+  color: #C271FF;
+  font-size: 28px;
+  margin-top: 200px;
+  margin-bottom: 30px;
+}
+
+
+
+
+main section:nth-of-type(2) {
+  background-color: #C271FF; 
+  padding: 60px 20px;
+  text-align: center;
+  color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 40px;
+  flex-wrap: wrap;
+}
+
+main section:nth-of-type(2) img {
+  width: 150px;
+  height: 150px;
+  border-radius: 50%;
+  object-fit: cover;
+}
+
+main section:nth-of-type(2) blockquote {
+  font-size: 18px;
+  font-weight: 300;
+  line-height: 1.6;
+  max-width: 600px;
+  margin: 0 auto 20px;
+  text-align: left;
+}
+
+main section:nth-of-type(2) h3 {
+  font-size: 16px;
+  font-weight: bold;
+  margin-top: 10px;
+  margin-bottom: 4px;
+  text-align: left;
+}
+
+main section:nth-of-type(2) p {
+  font-size: 14px;
+  font-style: italic;
+  color: #f5f5f5;
+  text-align: left;
+}
+
+
+
+
+/* Videos List Section */
+main section:nth-of-type(3) {
+  padding: 80px 40px;
+  background-color: #ffffff;
+  text-align: center;
+  color: #000000;
+}
+
+main section:nth-of-type(3) h2 {
+  font-size: 32px;
+  margin-bottom: 60px;
+  font-weight: 700;
+}
+
+main section:nth-of-type(3) h2 span {
+  color: #C271FF; /* pinkish-purple for "popular" */
+}
+
+.video-list {
+  display: flex;
+  justify-content: space-between;
+  gap: 30px;
+  flex-wrap: wrap;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.video-card {
+  width: 250px;
+  text-align: left;
+}
+
+.video-card img {
+  width: 100%;
+  border-radius: 5px;
+  margin-bottom: 10px;
+  position: relative;
+}
+
+.video-card h3 {
+  font-size: 16px;
+  font-weight: bold;
+  margin-bottom: 6px;
+}
+
+.video-card p {
+  font-size: 14px;
+  color: #666;
+  margin-bottom: 10px;
+}
+
+.video-author {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  font-size: 14px;
+  font-weight: bold;
+  color: #C271FF;
+  margin-bottom: 6px;
+}
+
+.video-author img {
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+}
+
+.video-rating {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.video-rating .stars {
+  color: #C271FF;
+}
+
+.video-rating span {
+  font-size: 12px;
+  color: #888;
+}
+
+
+
+
+/* Membership Section */
+main section:nth-of-type(4) {
+  background-color: #071629; /* Deep navy blue */
+  color: white;
+  text-align: center;
+  padding: 80px 20px;
+}
+
+main section:nth-of-type(4) h2 {
+  font-size: 32px;
+  margin-bottom: 60px;
+  font-weight: 400;
+}
+
+main section:nth-of-type(4) h2 span {
+  color: #C271FF; /* Purple for "Free" */
+  font-weight: bold;
+}
+
+.membership-cards {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 40px;
+  margin-bottom: 40px;
+}
+
+.membership-card {
+  width: 200px;
+}
+
+.membership-card img {
+  width: 50px;
+  height: 50px;
+  margin-bottom: 20px;
+}
+
+.membership-card h3 {
+  font-size: 16px;
+  margin-bottom: 10px;
+  color: white;
+}
+
+.membership-card p {
+  font-size: 14px;
+  color: #ffffffb0;
+  line-height: 1.5;
+}
+
+main section:nth-of-type(4) button {
+  margin-top: 20px;
+  background-color: #C271FF;
+  border: none;
+  padding: 14px 28px;
+  font-weight: bold;
+  border-radius: 28px;
+  color: white;
+  font-size: 14px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+main section:nth-of-type(4) button:hover {
+  background-color: #a244e8;
+}
+
+
+
+
+/* FAQ Section */
+main section:nth-of-type(5) {
+  background-color: #ffffff;
+  color: #071629;
+  padding: 80px 20px;
+  text-align: center;
+}
+
+main section:nth-of-type(5) h2 {
+  font-size: 32px;
+  margin-bottom: 60px;
+  font-weight: 400;
+  letter-spacing: 2px;
+}
+
+.faq-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 40px;
+  text-align: left;
+  max-width: 1000px;
+  margin: 0 auto;
+}
+
+.faq-item h3 {
+  font-size: 16px;
+  font-weight: bold;
+  margin-bottom: 12px;
+}
+
+.faq-item p {
+  font-size: 14px;
+  line-height: 1.6;
+  color: #555;
+}
+
+
+
+/* Footer */
+footer {
+  background-color: #071629;
+  color: white;
+  padding: 40px 20px;
+}
+
+footer section {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  max-width: 1100px;
+  margin: 0 auto;
+}
+
+footer img {
+  height: 40px;
+}
+
+footer div i {
+  font-size: 18px;
+  color: white;
+  margin-left: 15px;
+  transition: color 0.3s ease;
+}
+
+footer div i:hover {
+  color: #C271FF;
+}
+
+footer p {
+  text-align: center;
+  color: #ffffffaa;
+  font-size: 14px;
+  margin-top: 20px;
+  width: 100%;
+}
+
+
