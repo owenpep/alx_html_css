@@ -1,0 +1,79 @@
+/* Existing Flexbox layout rules remain */
+body {
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+    margin: 0;
+    font-family: 'Arial', sans-serif;
+    background-color: #fdfdfd;
+}
+
+main {
+    display: flex;
+    flex-direction: row;
+    flex: auto;
+}
+
+/* Flex ratios */
+article {
+    flex: 2;
+    overflow-y: auto;
+    background-color: #fffbe6;
+    padding: 20px;
+    border-left: 4px solid #f0c000;
+    font-size: 16px;
+    line-height: 1.6;
+    box-shadow: inset 0 0 5px #ddd;
+}
+
+aside {
+    flex: 1;
+    overflow-y: auto;
+    background-color: #f0f0f0;
+    padding: 20px;
+}
+
+/* Header and Footer */
+header, footer {
+    background-color: #007bff;
+    color: white;
+    text-align: center;
+    padding: 15px;
+}
+
+footer {
+    font-size: 14px;
+}
+
+/* Logo styling (predefined class) */
+.logo {
+    font-size: 28px;
+    font-weight: bold;
+    padding-right: 10px;
+    display: inline-block;
+}
+
+/* Header nav list */
+header ul {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-left: 0;
+    gap: 15px;
+    margin: 0;
+}
+
+header li {
+    padding: 5px 10px;
+}
+
+/* Link styles in aside */
+aside a {
+    color: #007bff;
+    text-decoration: none;
+}
+
+aside a:hover {
+    text-decoration: underline;
+}
