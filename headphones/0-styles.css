@@ -1,0 +1,113 @@
+/* CSS Reset */
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* CSS Variables */
+:root {
+  --primary-color: #ff6565;
+  --text-color: #ffffff;
+  --bg-dark: #1c1c1c;
+  --font-main: 'Source Sans Pro', sans-serif;
+  --max-width: 1000px;
+}
+
+/* Base Styles */
+body {
+  font-family: var(--font-main);
+  background-color: var(--bg-dark);
+  color: var(--text-color);
+  line-height: 1.6;
+}
+
+a {
+  text-decoration: none;
+  color: var(--text-color);
+}
+
+.container {
+  max-width: var(--max-width);
+  margin: 0 auto;
+  padding: 20px;
+}
+
+/* Header */
+.header {
+  background: var(--bg-dark);
+  padding: 20px 0;
+}
+
+.logo {
+  font-size: 24px;
+  font-weight: bold;
+}
+
+.nav {
+  margin-top: 10px;
+}
+
+.nav-list {
+  list-style: none;
+  display: flex;
+  gap: 20px;
+}
+
+.nav-list a:hover {
+  color: var(--primary-color);
+}
+
+/* Hero Section */
+.hero {
+  text-align: center;
+  padding: 80px 20px;
+  background: url('images/hero-desktop.jpg') no-repeat center center;
+  background-size: cover;
+}
+
+.hero h1 {
+  font-size: 36px;
+  margin-bottom: 10px;
+}
+
+.hero p {
+  font-size: 18px;
+  margin-bottom: 20px;
+}
+
+.hero-button {
+  display: inline-block;
+  background-color: var(--primary-color);
+  padding: 12px 24px;
+  font-weight: bold;
+  border-radius: 4px;
+  transition: opacity 0.3s;
+}
+
+.hero-button:hover {
+  opacity: 0.9;
+}
+
+/* Responsive */
+@media screen and (max-width: 480px) {
+  .nav-list {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .hero {
+    background: url('images/hero-mobile.jpg') no-repeat center center;
+    background-size: cover;
+  }
+
+  .hero h1 {
+    font-size: 28px;
+  }
+
+  .hero p {
+    font-size: 16px;
+  }
+}
